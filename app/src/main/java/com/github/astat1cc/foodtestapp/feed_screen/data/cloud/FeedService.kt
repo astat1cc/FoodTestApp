@@ -6,6 +6,6 @@ import retrofit2.http.Query
 
 interface FeedService {
 
-    @GET("")
+    @GET("filter.php")
     suspend fun fetchFood(@Query("c") category: String): NetworkResponse
 }

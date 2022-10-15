@@ -3,7 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.github.astat1cc.foodtestapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".FoodTestApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
