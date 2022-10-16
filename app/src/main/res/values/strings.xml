@@ -3,4 +3,8 @@
     <string name="no_connection_error_message">No connection</string>
     <string name="service_unavailable_error_message">Service unavailable now</string>
     <string name="something_went_wrong_error_message">Something went wrong</string>
+    <string name="profile">Profile</string>
+    <string name="menu">Menu</string>
+    <string name="cart">Cart</string>
+    <string name="try_again">Try again</string>
 </resources>

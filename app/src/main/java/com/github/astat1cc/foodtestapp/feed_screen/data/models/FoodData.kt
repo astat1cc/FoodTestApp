@@ -7,5 +7,6 @@ data class FoodData(
     val strMeal: String,
     val strMealThumb: String
 ) {
+
     fun toDomain() = FoodDomain(idMeal, strMeal, strMealThumb)
 }

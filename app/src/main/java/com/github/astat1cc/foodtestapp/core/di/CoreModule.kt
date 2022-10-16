@@ -1,7 +1,9 @@
 package com.github.astat1cc.foodtestapp.core.di
 
+import androidx.room.Room
 import com.github.astat1cc.foodtestapp.core.AppDispatchersProvider
 import com.github.astat1cc.foodtestapp.core.AppErrorHandler
+import com.github.astat1cc.foodtestapp.core.database.AppDatabase
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.android.ext.koin.androidContext
@@ -32,5 +34,8 @@ val coreModule = module {
     }
     single<AppErrorHandler> {
         AppErrorHandler.Impl(androidContext())
+    }
+    single {
+        Room.databaseBuilder(androidContext(), AppDatabase::class.java, AppDatabase.NAME).build()
     }
 }
